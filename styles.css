@@ -1,0 +1,307 @@
+
+/*
+#464239 grey
+
+#eea05e copper
+#d8fffc lightBlue
+#efc39e peach 
+/*#232a38--navy*/
+
+.mixitup-control-active{
+    color: #efc39e;
+}
+a,p,h1,h2,h3,h4,ul,li{
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+#brand{
+  text-decoration: none;
+  pointer-events: none;
+  width:auto;
+  height:35px;
+  z-index:2;
+  position:fixed;
+  top:20px;
+  text-align:left;
+    padding:7px 100% 0px 0px;
+    font-size: 25px;
+   
+    transition: 0.3s;
+    border-bottom: none;
+
+    }
+    #brand a{
+      text-decoration:none;
+      
+    }
+/*#brand a:hover{
+    color: #efc39e;*/
+  
+    
+.menu{
+  visibility: hidden;
+
+}
+
+
+.sidenav{
+    margin-top: 50px;
+    background-color:none;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    transition: left .5s ease-in-out;
+}
+.sidenav ul{
+  list-style-type: none;
+  padding-left:0;
+  padding-top: 60px;
+   display: block;
+}
+.sidenav li{
+  padding-bottom:15px;
+}
+.sidenav a{
+  padding: 8px;
+
+  text-decoration:none;
+  margin-top: 10px;
+  
+
+}
+
+.sidenav a:hover{
+  color:#efc39e;
+}
+/*
+header.navOpen nav{
+    left: 80px;
+}*/
+
+body{
+  margin-left: 10%;
+  margin-right: 10%;
+ background-color: #232a38;
+}
+.projectPage{
+  padding-right: 12%;
+  padding-left: 12%;
+}
+/*  container*/
+.container{
+  margin-top: 50px;
+  margin-left: 25%;
+  
+  margin-bottom: 2%;
+  padding: 2% 1% 0;
+  text-align: justify;
+  font-size: 15px;
+  background: none;
+ 
+}
+
+.container: after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container .mix{
+  text-align: left;
+  background: none;
+  margin-bottom: 1%;
+  /*display: none; <-- uncomment this rule for use with MixItUp*/
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 0%;
+}
+
+.mix:hover{
+  opacity: 0.8;
+}
+@media only screen and (max-width: 640px) {
+
+#brand{
+  
+  pointer-events: auto;
+   background-color: #232a38;
+  width:auto;
+  height:45px;
+  z-index:2;
+  position:fixed;
+  top:-5px;
+  left:0;
+  text-align:left;
+  padding:15px 100% 0px 15px;
+  font-size: 25px;
+  color: #818131;
+  transition: 0.3s;
+  border-bottom: 2px solid #eea05e;
+ 
+}
+   #brand h2{
+        margin-top: 0px;
+      }
+  #brand a{
+      text-decoration:none;
+       color: #d8fffc;
+    }
+ #brand a:hover{
+      color:#efc39e;}
+
+
+.menu{
+visibility: visible;
+width:auto;
+height:auto;
+position:fixed;
+top:0px;
+right:10px;
+z-index:4;
+color:#fff;
+padding:4px;
+}
+.menu:hover{
+  color: #efc39e;
+}
+
+.sidenav {
+  
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: -50px;
+    left: 0;
+    background-color: rgba(35, 42, 56,0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+   
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 35px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+
+
+}
+
+.sidenav a:hover{
+    color: #efc39e;
+}
+
+
+.container{
+   margin-left: 0%;
+}
+
+.projectPage{
+  padding: 0px;
+}
+    }
+
+
+
+@media screen and (min-width: 100px) {
+  
+  .container .mix,
+  .container .gap{
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+    width: 32%;
+  }
+}
+
+
+
+/*I am a cheekan yes I am
+I eat lots of cheeks whenever I can
+and when I get full, my berri gets big
+and then I go to sleep and dream of */
+
+/* stuffs */
+
+
+.backButton{
+  margin-top: 40px;
+  margin-left: -30px; 
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+
+}
+
+.backButton:hover{
+color: #efc39e;
+
+}
+.title{
+  text-align: center;
+}
+.ingredients{
+  text-align: center;
+}
+.projects{
+  margin: 10px 0px 10px 0px;
+  padding: 50px;
+  background: blue;
+}
+
+img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+article{
+padding:15px;
+/*background:yellow;*/
+}
+ body{  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+} 
+ 
+footer {
+ padding: 10px 0px 10px 0px;
+/*  background: salmon;*/
+
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
