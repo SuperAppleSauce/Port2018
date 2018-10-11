@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Alexis_Trevizo</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/stylesProject.css">
+
+</head>
+<header>
+
+
+  <div id="brand">
+  <a href="./home.html"> 
+      <h2>alexisTrevizo</h2>
+  </a>    
+  </div>
+
+</header>
+<!--  <div class="brand">Title<br>LongerTitle</div> -->
+       <img class="imageM"  src="./images/advv2.gif"" 
+      alt= "GIfs of interactive maps for advertisi" width = "100%">  
+       <img class="imageM"  src="./images/advv1.gif"" 
+      alt= "GIfs of interactive maps for advertisi" width = "100%">   
+<head>
+  <div class="sidenavP">
+    <p class="eyeBrow">PROJECT NAME</p>
+    <p class="projectName">Interaction Design: Adverator</p>
+    <p class="eyeBrow">DATE</p>
+    <p>January 2016</p>
+    <p class="eyeBrow">MATERIALS</p>
+      <p>After Effects, Figma, Leaflet.js</p>
+   <!--  <p class="eyeBrow">CONTRIBUTORS</p>
+    <p>Ali Fung,Ali Fung,Ali Fung,Ali Fung,</p> -->
+
+  </div>
+  </head>
+
+<body>
+  <div class="containerP"> 
+
+
+      <img class="imageD"  src="./images/advv2.gif"" 
+      alt= "GIfs of interactive maps for advertisi" width = "100%">  
+       <img class="imageD"  src="./images/advv1.gif"" 
+      alt= "GIfs of interactive maps for advertisi" width = "100%">  
+      
+  
+      <p class="eyeBrow">Details</p>
+
+        <p>While I was an intern at Vaudeville Ventures, I worked on many UI and interaction design projects. I primarily focused on itereating and prototyping the solutions my team came up with. Below is a sample of my work on a feature for Adverator.</p>
+
+        <br>
+         <p>Adverator is a website designed to give local businesses the ability to effectively curate their local ad campaigns. These are a few examples of the interaction design solutions we found to be most effective for users who were having trouble understanding Adverator’s customizable campaigns.
+ </p>
+
+
+      <p class="eyeBrow">goals</p>
+     <p> Design a user-friendly calendar for advertisers to easily select locations and time sections for their ads to appear.</p>
+  <p class="eyeBrow">research</p>
+     <p>In the previous website, it wasn’t clear what areas were available for advertisers at specific times. Specific locations of available billboards were displayed in a list format. Users found it hard to visualize where the ad spaces were located without a map. In addition, once a user chose dates on the calendar, they were redirected towards another page with the listings of locations.</p>
+
+ <p class="eyeBrow">Solutions</p>
+<p> In my solution, users have a dynamically changing map that refreshed based on selected dates. Once a user selects an option that is not available, the color turns red instead of orange, and a gentle warning appears next to the confirm button. Rather than the list that was previously used, my map allows users to visually see where their advertisements can be displayed, and visualize what neighborhoods these locations are located in.
+</p>
+
+  </div>
+</body>
+
+<script src="https://use.fontawesome.com/89e8d09064.js"></script>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<!-- my JavaScript -->
+<!--         var mixer = mixitup('.container', {
+    controls: {
+        toggleDefault: 'none'
+    }
+});
+ -->
+<!-- mixItup -->
+<script src="js/mixitup.min.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.height = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.height = "0%";
+  }
+  var containerEl = document.querySelector('.container');
+  var mixer = mixitup(containerEl);
+</script>
+
+</html>

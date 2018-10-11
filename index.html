@@ -1,181 +1,109 @@
 <!DOCTYPE html>
 <html>
 
+<style type="text/css">
+
+a,h1,h2,h3,h4 p{
+  color: #232a38;
+}
+html, body {
+			background-image: url(hu_res.jpg) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+  
+}
+
+body{
+	margin: 0;
+}
+#backgrnd_img {
+ /* width: 100%;
+  background: blue;
+  height: 500px;*/
+}
+#intro, #cta-group{
+  font-family: sans-serif;
+  color: white;
+  
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  padding-top: 5%;
+}
+.btn {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #88acae;
+  border-radius: 0.6em;
+  color: #88acae;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.fourth {
+  border-color: #232a38;
+  color: #232a38;
+  background-image: -webkit-linear-gradient(45deg, #232a38 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #232a38; 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+  background-position: 0;
+}
+
+</style>
+
 <head>
-
-  <title>Alexis_Trevizo</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-  <link rel="stylesheet" type="text/css" href="stylesHome.css">
+	<title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<meta name="viewport" content="width=device-width">
+ <meta charset="UTF-8">
 
 </head>
-<header>
+<body>
+<div id = "backgrnd_img">
 
-  <i class="fa fa-ellipsis-h menu" aria-hidden="true" style="font-size:35px;cursor:pointer" onclick="openNav()"></i>
-<!-- 
-  <span class ="menu" style="font-size:30px;cursor:pointer" onclick="openNav()"> ...</span> -->
-<div id="brand">
-  <!--     <a class="closebtn" onclick="closeNav()"> -->
-  <h2>alexisTrevizo</h2>
-  </a>
+  <div id = "intro">
+    <h1>Alexis Trevizo<h1>
+      <h3>Pokemon enthusiast, VR extraordinaire, and creative thinker.</h3>
+  </div>
+
+  <div id = "cta-group">
+
+
+
+    <a href="./home.html">
+    <button class="btn fourth">Works</button>
+    </a>
+    <a href="./about.html">
+   <button class="btn fourth">About</button>
+    </a>
+
+
+  </div>
+
+<!-- <img src = "http://placehold.it/850x350"></img> -->
 </div>
 
-<nav id="mySidenav" class="controls sidenav">
-  <ul>
 
-    <li><a class="control closebtn" onclick="openNav()" data-filter="all" href='#'>All Projects</a></li>
-    <li><a class="control closebtn" onclick="openNav()" data-filter=".co_lab" href='#'>Collaborations</a></li>
-    <li><a class="control closebtn" onclick="openNav()" data-filter=".ux_ui" href='#'>UX / UI</a></li>
-    <li><a class="control closebtn" onclick="openNav()" data-filter=".three_design" href='#'>3D Design</a></li>
-    <!--  <li><a class="control closebtn" onclick="closeNav()" data-filter=".two_design" href='#'> 2D Motion</a></li> -->
-    <li><a class="control closebtn" onclick="openNav()" data-filter=".current" href='#'>Physical Computing</a></li>
-
-    <li><a class=" closebtn" onclick="openNav()" href='./about.html'>About</a></li>
-  </ul>
-</nav>
-</header>
-<!--  <div class="brand">Title<br>LongerTitle</div> -->
-
-<body>
-  <div class="container" data-ref="mixitup-container">
-
-  <div class="mix co_lab ux_ui current">
-      <a id="project" href="./thea.html">
-      <img src="./images_h/thea.png" alt= "a concept project to aid the visually impaired" width = "100%">  
-       </a>
-      <h3 class = "titleProject">Thea</h3>
-      <!-- <h4>Virtual Reality</h4> -->
-    </div>
-
-    <div class="mix ux_ui">
-      <a id="project" href="./vz.html">
-      <img src="./images_h/vz.png" alt= "I interned at Verizon!" width = "100%">   
-       </a>
-      <h3 class = "titleProject">Verizon Internship</h3>
-      <!-- <h4>Virtual Reality</h4> -->
-    </div>
-    <div class="mix co_lab three_design">
-      <a id="project" href="./hyperspace.html">
-      <img src="./images_h/hyperspace.png" alt= "a virtual reality project about space" width = "100%">   
-       </a>
-      <h3 class = "titleProject">HyperSpace VR</h3>
-      <!-- <h4>Virtual Reality</h4> -->
-    </div>
-
-
-
-    <div class="mix current">
-      <a id="project" href="./bugs.html">
-      <img src="./images_h/01_h.jpg" alt= "a physical computing project about bugs and trash" width = "100%">  
-            
-       </a>
-      <h3 class = "titleProject">Salvaged Entomology</h3>
-    </div>
-
-    <div class="mix co_lab">
-      <a id="project" href="./Eos.html">
-        <img id='3d1' src="./images_h/dome.jpg" alt="a conceptual project about outdoor public spaces" width = "100%" height = "30%">
-      </a>
-      <h3 class = "titleProject">Eos</h3>
-    </div>
-
-    <div class="mix ux_ui">
-      <a id="project" href="./vvad.html">
-      <img src="./images_h/vvad.png" alt= "I interned at Vaudville Ventures" width = "100%">        
-       </a>
-      <h3 class = "titleProject">Vaudville Ventures</h3>
-    </div>
-    <!--  <div class="mix two_design" >
-      <a id ="project" 
-            href="https://vimeo.com/user62494366" target="_blank">
-      <img src="./images_h/lemons.jpg" alt= "a series of my motion graphics expirements" width = "100%">        
-       </a>
-
-       <h3>Motion Graphics</h3>
-       </div> -->
-    <div class="mix three_design">
-      <a id="project" href="./threedee.html">
-        <img id='3d1' src="./images_h/Icream.jpg" alt="a series of my 3D experiments" width = "100%" height = "30%">
-
-      </a>
-      <h3 class = "titleProject">Ice Cream Sandwich</h3>
-    </div>
-    <div class="mix co_lab">
-      <a id="project" href="./Neuron.html">
-        <img id='3d1' src="./images_h/neuron_h.jpg" alt="I<3project1" width = "100%" height = "30%">
-        </a>
-      <h3 class = "titleProject">CityMaze</h3>
-    </div>
-
-    <div class="mix co_lab three_design">
-      <a id="project" href="./Hamlet.html">
-        <img id='3d1' src="./images_h/ham.jpg" alt="I<3project1" width = "100%" height = "30%">
-              
-        </a>
-      <h3 class = "titleProject">To Be With Hamlet</h3>
-    </div>
-    <div class="mix ux_ui">
-      <a id="project" href="./Thawit.html">
-      <img src="./images_h/thaw.png" alt= "" width = "100%"> 
-
-       </a>
-      <h3 class = "titleProject">Thaw It</h3>
-    </div>
-
-    <!--               <div class="mix ux_ui"></div>
-        <div class="mix co_lab"></div>
-            <div class="mix current"></div>
-            <div ="mix current"></div>
-            <div class="mix current"></div> -->
-
-    <div class="gap"></div>
-    <div class="gap"></div>
-    <div class="gap"></div>
-  </div>
 </body>
-
-<script src="https://use.fontawesome.com/89e8d09064.js"></script>
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
-<!-- my JavaScript -->
-<!--         var mixer = mixitup('.container', {
-    controls: {
-        toggleDefault: 'none'
-    }
-});
- -->
-<!-- mixItup -->
-<script src="js/mixitup.min.js"></script>
-
-<script>
-var clickState = 0;
-
-  function openNav() {  
-     if (clickState == 0) {
-      // open nav
-      document.getElementById("mySidenav").style.height = "100%";
-
-      clickState = 1;
-    } else {
-      // close nav
-         document.getElementById("mySidenav").style.height = "0%";
-
-      clickState = 0;
-    }
-   
-     
- 
-  }
-
-  
-  var containerEl = document.querySelector('.container');
-  var mixer = mixitup(containerEl);
-</script>
-
 </html>
