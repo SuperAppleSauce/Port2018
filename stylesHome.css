@@ -2,14 +2,14 @@
 /* SEQUENTIAL ANIMATION */
 
 /*Start On-load animation*/
-.textType{
+body{
 	opacity: 0;
 	animation: cascade 0.6s 1;
 	animation-timing-function: cubic-bezier(0, 0.59, 0.24, 1.33);
 	animation-fill-mode: forwards;
 }
 
-.textType:nth-child(1){
+body:nth-child(1){
 	opacity: 1;
 	animation: none;
 }
