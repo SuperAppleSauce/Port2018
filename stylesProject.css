@@ -1,3 +1,40 @@
+/* *{ transition: 0.3s;}
+ */
+
+svg path {
+  stroke:rgba(255, 255, 255, 0.6);
+  fill: none !important;
+  display: none;
+}
+
+#nav{
+z-index:5;
+  position:fixed;
+  top: 75px;
+  color:#E3AB00;
+/* background:#E3AB00; */
+/* height:60px; */
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+text-align:center;
+
+}
+#nav a{  
+   font-size:10pt;
+  color:rgba(255, 255, 255, 0.6);
+  padding-right:24px;
+  
+/*   text-decoration: none; */
+  text-transform: uppercase;
+}
+
+#nav a:hover{
+    text-decoration: none;
+
+}
 html{
   background: rgb(1,1,1);
 background: linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(19,23,30,1) 0%, rgba(23,27,36,1) 11%, rgba(35,42,56,1) 85%);
@@ -47,7 +84,6 @@ background: linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(19,23,30,1) 0%, rgba(23
 /*end On-load animation*/
 /*
 #464239 grey
-
 #eea05e copper
 #d8fffc lightBlue
 #efc39e peach 
@@ -61,10 +97,8 @@ body{
   margin-left: 5%;
   margin-right: 5%;
  /*background-color: #232a38;*/
- padding-bottom: 30px;
- 
- background: rgb(1,1,1);
-background: linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(19,23,30,1) 0%, rgba(23,27,36,1) 11%, rgba(35,42,56,1) 85%);
+ padding-bottom: 60px;
+
 
 }
 
@@ -76,16 +110,12 @@ a,p,h1,h2,h3,h4,ul,li{
 #brand{
   text-decoration: none;
   text-decoration-color: #FF773C;
-
   width:auto;
   height:35px;
-
   position:fixed;
   top:20px;
   text-align:left;
-    padding:7px 100% 0px 0px;
-    font-size: 25px;
-   
+  font-size: 35px;
     transition: 0.3s;
     border-bottom: none;
 
@@ -95,11 +125,11 @@ a,p,h1,h2,h3,h4,ul,li{
       
     }
      #brand h2{
-      color: #FF773C;
+      color: #FFC314;
     }
 
 .sidenavP{
-    margin-top: 100px;
+    margin-top: 210px;
     background-color:none;
     height: 100%;
     width: 20%;
@@ -110,20 +140,20 @@ a,p,h1,h2,h3,h4,ul,li{
 
 /*  container*/
 .containerP{
-  margin-top: 100px;
+  margin-top: 210px;
   margin-left: 25%;
   margin-bottom: 2%;
-  padding: 0 12% 0;
- /* text-align: justify;*/
+  padding: 0% 0% 0% 10%;
   background: none;
  
 }
 .eyeBrow{
   text-transform: uppercase;
   font-size: 15px;
-  padding-top: 30px !important;
+  padding-top: 45px !important;
   padding-bottom: 9px;
-  color: #FFE7D2; 
+  letter-spacing: 0.23em;
+color: rgba(255, 255, 255, 0.6); 
 }
 .projectName{
   font-size: 40px;
@@ -135,31 +165,65 @@ a,p,h1,h2,h3,h4,ul,li{
 }
 .imageM{
   display:none;
- 
+
 }
 
 img{
-padding-top: 30px !important;
+margin: 30px 0 !important;
+  border-radius: 12px;
 }
 
 @media only screen and (max-width: 640px) {
+  svg path {
+ display:block;
+  stroke:#222D3D;
+  fill: none !important;
+}
+  
+  #nav{
+z-index:5;
+  position:fixed;
+    top:92.25%;
+    left:0;
+background:#E3AB05;
+height:60px;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+text-align:center;
+  transition: 0.5s;
 
+}
+#nav a{ 
+  padding-right:0;
+  font-size:10pt;
+  color:#222D3D;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+  body{
+    margin-top:120px
+  }
+  
+
+  
 #brand{
   
   pointer-events: auto;
   background-color: #232a38;
-  width:auto;
+  width:100%;
   height:45px;
   z-index:2;
   position:fixed;
   top:-5px;
   left:0;
   text-align:left;
-  padding: 15px 100% 0px 15px;
-  font-size: 25px;
-  color: #818131;
-  transition: 0.3s;
-  border-bottom: 2px solid #eea05e;
+  padding: 12px 24px;
+  font-size: 21pt;
+  border-bottom: 4px solid #FFC314;
  
 }
   #brand h2{
@@ -167,10 +231,9 @@ padding-top: 30px !important;
       }
   #brand a{
       text-decoration:none;
-       color: #d8fffc;
+
     }
- #brand a:hover{
-      color:#efc39e;}
+
 
       .sidenavP{
     margin-top: 0px;
@@ -183,7 +246,7 @@ padding-top: 30px !important;
 }
 
 .eyeBrow{
-  padding-top: 38px !important;
+  padding-top: 45px !important;
 
 }
 
@@ -192,7 +255,7 @@ padding-top: 30px !important;
   margin-left: 0% !important;
   margin-bottom: 2%;
   padding: 0 0% 0 !important;
- /* text-align: justify;*/
+
   background: none;
  
 }
@@ -203,8 +266,6 @@ padding-top: 30px !important;
 }
 .imageM{
   display:block;
- 
-  margin-top: 100px; 
 
 }
 
@@ -216,10 +277,6 @@ padding-top: 30px !important;
 
 
 
-/*I am a cheekan yes I am
-I eat lots of cheeks whenever I can
-and when I get full, my berri gets big
-and then I go to sleep and dream of */
 
 /* stuffs */
 
@@ -237,7 +294,6 @@ and then I go to sleep and dream of */
  
 footer {
  padding: 10px 0px 10px 0px;
-/*  background: salmon;*/
 
   list-style: none;
   
@@ -250,4 +306,3 @@ footer {
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
-
