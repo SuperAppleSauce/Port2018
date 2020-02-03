@@ -79,13 +79,13 @@ padding: 12px 30px;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-around;
+  -webkit-justify-content: normal;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: baseline;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  flex-wrap: wrap;
   align-items: center;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
@@ -99,23 +99,25 @@ padding: 12px 30px;
 
 .div-block-2 {
     text-decoration: none;
-  display: block;
-  min-height: 350px;
-  min-width: 250px;
-  padding-top: 45px;
-  padding-right: 60px;
-  padding-left: 60px;
-  margin-bottom:30px;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  border-radius: 20px;
-  background-color: #2b394d;
+    display: inheritblock;
+    margin-right: 22px;
+    min-height: 350px;
+    min-width: 250px;
+    max-width: 250px;
+    padding-top: 45px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-bottom:30px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: baseline;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-radius: 20px;
+    background-color: #2b394d;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -236,6 +238,7 @@ padding: 12px 30px;
   }
   .div-block-2 {
     width: 0px;
+    margin-right: 21px;
     height: 275px;
     min-width: 250px;
     padding: 30px;
