@@ -1,6 +1,7 @@
 .body {
   margin: 120px 120px 240px;
   background-color: #1a222d;
+  background-position: right top;
    background-image: url("blob.svg");
 }
 
