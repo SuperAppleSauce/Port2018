@@ -153,6 +153,7 @@ padding: 12px 30px;
     background-color: #1a222d;
     font-family: 'Open Sans', sans-serif;
     color: #ffc314;
+      background-position: 100% -20%;
   }
   .heading {
     margin-top: 0px;
