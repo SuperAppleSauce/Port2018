@@ -167,7 +167,7 @@ margin-top:-12px;
       background-position: 100% 100%;
   }
   .heading {
- font-size: 7rem;
+ font-size: 6.5rem;
   line-height:100%;
 /*     font-size: 3.5vw; */
     margin-top: 0px;
@@ -218,9 +218,10 @@ margin-top:-12px;
   }
   
   .div-block-2 {
-    min-width:300px;
-        min-height:300px;
-            max-height:300px;
+    margin-right:12px;
+    min-width:250px;
+        min-height:250px;
+            max-height:250px;
 
 
   }
