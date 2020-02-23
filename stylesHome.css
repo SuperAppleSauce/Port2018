@@ -14,6 +14,7 @@
 
 
 .heading {
+  margin-bottom:30px;
   color: #ffc314;
   font-size: 9.5rem;
   line-height: 164px;
@@ -110,15 +111,10 @@ padding: 12px 30px;
 .div-block-2 {
     text-decoration: none;
     display: inheritblock;
-    margin-right: 22px;
-    min-height: 350px;
-    min-width: 250px;
-    max-width: 250px;
-    padding-top: 45px;
-    padding-right: 60px;
-    padding-left: 60px;
-    margin-bottom:30px;
-    -webkit-box-pack: start;
+  padding:30px;
+    min-height: 300px;
+    max-width: 300px;
+        -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: baseline;
@@ -129,13 +125,14 @@ padding: 12px 30px;
     border-radius: 20px;
     background-color: #2b394d;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: .3s;
+
 }
 
 
 .div-block-2:hover {
+margin-top:-12px;
   box-shadow: 0 12px 12px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  transition-duration: .3s;
-  
 }
 
 .heading-3 {
