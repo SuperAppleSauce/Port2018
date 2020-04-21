@@ -10,8 +10,12 @@ svg{
 .goOne1{
     cursor: pointer;
   float:right;
-  position:relative;
+  position:absolute;
+  bottom:21px;
+  right:21px;
   z-index:2;
+  
+  
   margin-top:30px;
   border-radius:50%;
    height: 25px;
@@ -181,8 +185,12 @@ padding: 12px 30px;
   padding:30px;
   margin-left:12px;
   margin-bottom:48px;
-    min-height: 200px;
+  
+  min-height: 300px;
+    max-height: 300px;
+    min-width: 275px;
     max-width: 275px;
+  
   
         -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -251,7 +259,9 @@ padding: 12px 30px;
  
 
  .div-block-2 {
-       max-width: 75%;
+  
+       max-width: 80%;
+        min-width: 80%;
    
         
   }
