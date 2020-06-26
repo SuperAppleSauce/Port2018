@@ -187,7 +187,9 @@ padding: 12px 30px;
     display: inheritblock;
   padding:30px;
   margin-left:0px;
+	margin-right:30px;
   margin-bottom:48px;
+
   
   min-height: 300px;
     max-height: 300px;
