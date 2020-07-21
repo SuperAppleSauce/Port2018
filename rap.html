@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        top:0% !important;
+        width: 15% !important;
+        height: 100% !important;
+        border: black solid 2px !important;
+
+    }
+img{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    position: absolute;
+    color:white;
+
+}
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Swiper -->
+  <div class="swiper-container swiper-container-v">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-container swiper-container-h">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><h1>Bears</h1> <img src="https://placebear.com/g/1000/1000"></div>
+            <div class="swiper-slide"><img src="https://placebear.com/g/500/700"></div>
+            <div class="swiper-slide"><img src="https://placebear.com/g/1200/1000"></div>
+            <div class="swiper-slide"><img src="https://placebear.com/g/50/100"></div>
+           
+          </div>
+                         <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+      </div>
+    
+  </div>
+  <div class="swiper-slide">
+    <div class="swiper-container swiper-container-h">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><h1>Bears?</h1><img src="http://placebeard.it/640/480"> </div>
+          <div class="swiper-slide"><img src="https://placebeard.it/500/700"></div>
+          <div class="swiper-slide"><img src="https://placebeard.it/1500/1700"></div>
+
+   
+        </div>
+                       <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
+   <!-- Add Pagination -->
+   <div class="swiper-pagination"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiperH = new Swiper('.swiper-container-h', {
+            // slidesPerView: 1,
+   loop: true,
+   navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+   
+
+//       spaceBetween: 50,
+//     slidesPerView: 1,
+//    freeMode: true,
+// freeModeSticky: true,
+//      mousewheelControl: false,
+
+    });
+    var swiperV = new Swiper('.swiper-container-v', {
+        direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+    });
+
+
+  </script>
+</body>
+
+</html>
