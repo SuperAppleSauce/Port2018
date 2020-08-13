@@ -24,12 +24,17 @@
       margin: 0;
       padding: 0;
     }
+.swiper-wrapper{
+  /* https://cubic-bezier.com */
 
+  transition: transform 1s cubic-bezier(0,.93,1,1)!important;
+}
     .swiper-container {
       width: 100%;
       height: 100%;
       margin-left: auto;
       margin-right: auto;
+     
     }
 
     .swiper-slide {
@@ -55,16 +60,53 @@
         top:0% !important;
         width: 15% !important;
         height: 100% !important;
-        border: black solid 2px !important;
-
+        border: black solid 0px !important;
+        color: #007aff00 !important;
     }
 img{
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
+    opacity: 60%;
 }
 h1{
     position: absolute;
     color:white;
+    z-index: 4;
+}
+
+.swiper-pagination{
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+}
+.swiper-container-vertical > .swiper-pagination-bullets{
+    left: 10%;
+top: 100px;
+transform: translate3d(0,0,0)
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 0;
+    display:inline;
+
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    color:black;
+    border-bottom: solid 1px black;
+
+}
+.swiper-pagination-bullet {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background:none;
+    opacity: 1;
+    color: white;
+    font-size: 1.25vw;
+line-height: 22px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
 
 }
   </style>
@@ -117,6 +159,8 @@ h1{
   <script>
     var swiperH = new Swiper('.swiper-container-h', {
             // slidesPerView: 1,
+            zoom: true,
+            speed: 600,
    loop: true,
    navigation: {
         nextEl: '.swiper-button-next',
@@ -124,18 +168,21 @@ h1{
       },
    
 
-//       spaceBetween: 50,
-//     slidesPerView: 1,
-//    freeMode: true,
-// freeModeSticky: true,
-//      mousewheelControl: false,
-
     });
+
+    let labels = ['Creative & Art Direction', '3D Modeling & Rendering', 'Writing', 'Marketing & Strategy', 'Graphic Design', 'Presentation Design'];
     var swiperV = new Swiper('.swiper-container-v', {
         direction: 'vertical',
+        loop: true,
+        effect: 'cube',
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        renderBullet: function (index, className) {
+     return '<div class="' + className + '">' + (labels[index])+ 
+ '</div>';
+
+    },
       },
 
     });
