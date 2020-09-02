@@ -1,6 +1,6 @@
 document.querySelectorAll("button").forEach((btn) => {
   btn.addEventListener("click", () => {
-    gsap.to(window, {duration: 1, ease:Expo.easeOut, scrollTo:{y:".projectHero" , offsetY:70}});
+    gsap.to(window, {duration: 1, ease:Expo.easeOut, scrollTo:{y:"#brand" , offsetY:70}});
   });
 });
 
